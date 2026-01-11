@@ -16,7 +16,7 @@ defineProps<{
     }"
   >
     <template #description>
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2 min-w-0">
         <Motion
           v-for="(experience, index) in page.experience.items"
           :key="index"
@@ -24,25 +24,25 @@ defineProps<{
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.4 + 0.2 * index }"
           :in-view-options="{ once: true }"
-          class="text-muted flex items-center text-nowrap gap-2"
+          class="text-muted flex flex-wrap items-center gap-2"
         >
           <p class="text-sm">
             {{ experience.date }}
           </p>
           <USeparator />
           <ULink
-            class="flex items-center gap-1"
+            class="flex min-w-0 flex-wrap items-center gap-1"
             :to="experience.company.url"
             target="_blank"
           >
-            <span class="text-sm">
+            <span class="text-sm break-words">
               {{ experience.position }}
             </span>
             <div
-              class="inline-flex items-center gap-1"
+              class="inline-flex items-center gap-1 break-words"
               :style="{ color: experience.company.color }"
             >
-              <span class="font-medium">{{ experience.company.name }}</span>
+              <span class="font-medium break-words">{{ experience.company.name }}</span>
               <UIcon :name="experience.company.logo" />
             </div>
           </ULink>
