@@ -23,23 +23,37 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
-    colorMode: false,
+    heading: 'Get in touch',
+    description: 'Open to full-time roles, freelance work, and collaborations.',
+    contacts: [{
+      label: 'Email',
+      value: 'fawzy.mohamed@live.com',
+      to: 'mailto:fawzy.mohamed@live.com'
+    }, {
+      label: 'Phone',
+      value: '+966 59 529 1001',
+      to: 'tel:+966595291001'
+    }, {
+      label: 'Location',
+      value: 'Riyadh, Saudi Arabia'
+    }],
     links: [{
-      'icon': 'i-simple-icons-discord',
-      'to': 'https://go.nuxt.com/discord',
-      'target': '_blank',
-      'aria-label': 'Nuxt on Discord'
+      icon: 'i-simple-icons-linkedin',
+      to: 'https://www.linkedin.com/in/fawzy-mohamed-2326b096/',
+      target: '_blank',
+      'aria-label': 'LinkedIn'
     }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://go.nuxt.com/x',
-      'target': '_blank',
-      'aria-label': 'Nuxt on X'
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/alkholigroup2020',
+      target: '_blank',
+      'aria-label': 'GitHub (Work)'
     }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
-    }]
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/fawzymohamed',
+      target: '_blank',
+      'aria-label': 'GitHub (Personal)'
+    }],
+    credits: `(c) ${new Date().getFullYear()} Fawzy Mohamed Fawzy`,
+    tagline: 'Let us build something great.'
   }
 })
