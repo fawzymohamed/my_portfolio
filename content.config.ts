@@ -43,7 +43,23 @@ export default defineContentConfig({
             })
           }))
         }),
+        skills: createBaseSchema().extend({
+          groups: z.array(z.object({
+            title: z.string(),
+            items: z.array(z.string())
+          }))
+        }),
         projects: createBaseSchema().extend({
+          links: z.array(createButtonSchema()).optional()
+        }),
+        contact: createBaseSchema().extend({
+          methods: z.array(z.object({
+            label: z.string(),
+            value: z.string(),
+            to: z.string().optional(),
+            icon: z.string().optional(),
+            target: z.enum(['_blank', '_self']).optional()
+          })),
           links: z.array(createButtonSchema()).optional()
         })
       })

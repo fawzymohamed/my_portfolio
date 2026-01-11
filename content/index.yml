@@ -56,6 +56,28 @@ experience:
         logo: "i-simple-icons-linear"
         url: "https://linear.app"
         color: "#5E6AD2"
+skills:
+  title: Skills
+  description: "A mix of design, product, and front-end expertise for end-to-end delivery."
+  groups:
+    - title: "Design"
+      items:
+        - "UX Research"
+        - "UI Design"
+        - "Design Systems"
+        - "Prototyping"
+    - title: "Development"
+      items:
+        - "Vue.js"
+        - "Nuxt"
+        - "TypeScript"
+        - "HTML/CSS"
+    - title: "Tools"
+      items:
+        - "Figma"
+        - "Framer"
+        - "Storybook"
+        - "Notion"
 projects:
   title: "Projects"
   description: "Selected work across enterprise systems, automation, and bilingual platforms."
@@ -63,3 +85,21 @@ projects:
     - label: "View all projects"
       to: "/projects"
       color: "neutral"
+contact:
+  title: "Contact"
+  description: "Have a project in mind or just want to say hello? Let's talk."
+  methods:
+    - label: "Email"
+      value: "emma.thompson@example.com"
+      to: "mailto:emma.thompson@example.com"
+      icon: "i-heroicons-envelope"
+    - label: "LinkedIn"
+      value: "linkedin.com/in/emmathompson"
+      to: "https://linkedin.com/in/emmathompson"
+      icon: "i-simple-icons-linkedin"
+      target: "_blank"
+    - label: "GitHub"
+      value: "github.com/emmathompson"
+      to: "https://github.com/emmathompson"
+      icon: "i-simple-icons-github"
+      target: "_blank"
