@@ -3,6 +3,8 @@
 ## Decisions
 - Remove sections: testimonials, blog, speaking, faq.
 - Default locale: en.
+- Routing: always prefix routes with locale (`/en` and `/ar`); redirect `/` to `/en`.
+- Use Nuxt i18n `strategy: 'prefix'` (not `prefix_except_default`) to keep `/en` visible.
 - Use placeholders for images for now.
 
 ## Core Sections

@@ -2,7 +2,7 @@
 
 ## Phase 1 - Discovery and Content Mapping
 - [x] Confirm which template sections to keep (Testimonials, Blog, Speaking, FAQ).
-- [ ] Finalize bilingual routing strategy (/en and /ar).
+- [x] Finalize bilingual routing strategy (/en and /ar).
 - [ ] Define content structure for hero, about, experience, skills, projects, and contact.
 - [ ] Collect or identify assets (headshot, screenshots, logos).
 
