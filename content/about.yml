@@ -1,27 +1,28 @@
-title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+title: About
+description: A Security-First Digital Architect with 14+ years of experience bridging Network Security and Full Stack Development.
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  I am **Fawzy Mohamed Fawzy**, a Senior Full Stack Developer and Network Security Professional based in **Riyadh, Saudi Arabia**. My journey is defined by a unique convergence of infrastructure security and software architectures.
+  
+  Unlike typical developers, I bring **6 years of hands-on experience as a Senior Network Professional**, managing Fortinet ecosystems, Cisco infrastructure, and enterprise data centers. This background allows me to build applications that are not just functional, but inherently secure and optimized for the network layer.
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  ### My Core Philosophy: "Zero-Cost Operations"
 
-  ### My Design Philosophy
+  I specialize in building self-hosted, automated ecosystems. At **ALKHOLI Group**, I transformed operations by replacing expensive SaaS subscriptions with custom-built, on-premise solutions. From **Stock Management Systems** to **AI-Powered Automation** and **Email Security**, I deliver enterprise-grade performance with **$0 operational cost**.
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  ### Technical Expertise
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  - **Frontend:** Vue.js, Nuxt.js, Svelte (Advanced)
+  - **Backend:** Node.js, Express.js, SQL (MSSQL, MySQL, PostgreSQL)
+  - **Security:** FortiGate, FortiEDR, SSL/TLS Management, WAF
+  - **AI & Automation:** Groq AI Integration, n8n Workflows, LLM Prompt Engineering
 
-  ### What Drives Me
+  ### The Pre-AI Era Foundation
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  It is important to note: **Many of my most complex systems—including the Enterprise Portal and Corporate Websites—were architected and coded entirely before the AI-assisted era.** This demonstrates a deep, fundamental understanding of programming logic and system design that goes beyond modern tool reliance.
 
-  ### Beyond the Screen
-
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
-
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
+  I am currently open to full-time roles, freelance contracts, and technical consulting.
 images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  - src: /hero/placeholder-tech-1.jpg
+    alt: System Architecture
+  - src: /hero/placeholder-tech-2.jpg
+    alt: Security Dashboard

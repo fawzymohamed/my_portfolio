@@ -1,29 +1,29 @@
 export default defineAppConfig({
   global: {
     picture: {
-      src: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'My profile picture'
+      src: '/hero/profile-placeholder.jpg', // Placeholder until real image is added
+      alt: 'Fawzy Mohamed Fawzy'
     },
-    meetingLink: 'https://cal.com/',
-    email: 'ui-pro@nuxt.com',
+    meetingLink: 'https://cal.com/', // Keep placeholder or remove if not in CV
+    email: 'fawzy.mohamed@live.com',
     available: true
   },
   ui: {
     colors: {
-      primary: 'blue',
-      neutral: 'neutral'
+      primary: 'cyan',
+      neutral: 'slate'
     },
     pageHero: {
       slots: {
-        container: 'py-18 sm:py-24 lg:py-32',
-        title: 'mx-auto max-w-xl text-pretty text-3xl sm:text-4xl lg:text-5xl',
-        description: 'mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted'
+        container: 'py-24 sm:py-32 lg:py-40 relative isolate overflow-hidden',
+        title: 'mx-auto max-w-2xl text-pretty text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500',
+        description: 'mt-6 text-lg/8 mx-auto max-w-2xl text-gray-300'
       }
     }
   },
   footer: {
-    heading: 'Get in touch',
-    description: 'Open to full-time roles, freelance work, and collaborations.',
+    heading: 'Secure Your Digital Future',
+    description: 'Specializing in secure, high-performance web architecture and automation.',
     contacts: [{
       label: 'Email',
       value: 'fawzy.mohamed@live.com',
@@ -37,22 +37,22 @@ export default defineAppConfig({
       value: 'Riyadh, Saudi Arabia'
     }],
     links: [{
-      icon: 'i-simple-icons-linkedin',
-      to: 'https://www.linkedin.com/in/fawzy-mohamed-2326b096/',
-      target: '_blank',
+      'icon': 'i-simple-icons-linkedin',
+      'to': 'https://www.linkedin.com/in/fawzy-mohamed-2326b096/',
+      'target': '_blank',
       'aria-label': 'LinkedIn'
     }, {
-      icon: 'i-simple-icons-github',
-      to: 'https://github.com/alkholigroup2020',
-      target: '_blank',
+      'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/alkholigroup2020',
+      'target': '_blank',
       'aria-label': 'GitHub (Work)'
     }, {
-      icon: 'i-simple-icons-github',
-      to: 'https://github.com/fawzymohamed',
-      target: '_blank',
+      'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/fawzymohamed',
+      'target': '_blank',
       'aria-label': 'GitHub (Personal)'
     }],
     credits: `(c) ${new Date().getFullYear()} Fawzy Mohamed Fawzy`,
-    tagline: 'Let us build something great.'
+    tagline: 'Precision. Security. Performance.'
   }
 })

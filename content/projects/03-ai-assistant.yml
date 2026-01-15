@@ -1,0 +1,10 @@
+title: "AI Prompt Assistant Platform"
+description: "Bilingual GenAI platform with smart prompt builder, real-time quality scoring, and zero-cost operational model."
+image: "/projects/ai-assistant.jpg"
+url: "https://ai.alkholi.com/"
+tags:
+  - "Groq AI"
+  - "Nuxt 4"
+  - "Vector DB"
+  - "Bilingual"
+date: 2024-03-01

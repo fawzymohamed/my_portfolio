@@ -1,105 +1,109 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Fawzy Mohamed Fawzy - Senior Full Stack Developer & Network Security Expert"
+  description: "Senior Full Stack Developer with 14+ years of experience. Specializing in secure, high-performance web architecture, zero-cost operations, and bilingual enterprise systems."
+title: "I am Fawzy Mohamed."
+description: "Senior Full Stack Developer & Network Security Expert. Transforming complex workflows into secure, high-performance digital solutions."
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
-      color: "neutral"
+    - label: "View My Projects"
+      to: "#projects"
+      color: "primary"
+      variant: "solid"
+      size: "lg"
+      icon: "i-heroicons-code-bracket-square"
   images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
-    - src: /hero/random-3.avif
-      alt: Random Image 3
-    - src: /hero/random-4.avif
-      alt: Random Image 4
-    - src: /hero/random-5.avif
-      alt: Random Image 5
-    - src: /hero/random-6.avif
-      alt: Random Image 6
-    - src: /hero/random-7.avif
-      alt: Random Image 7
-    - src: /hero/random-8.avif
-      alt: Random Image 8
-    - src: /hero/random-9.avif
-      alt: Random Image 9
+    - src: /hero/placeholder-tech-1.jpg
+      alt: System Architecture
+    - src: /hero/placeholder-tech-2.jpg
+      alt: Security Dashboard
+    - src: /hero/placeholder-tech-3.jpg
+      alt: Code Interface
+    - src: /hero/placeholder-tech-4.jpg
+      alt: Network Map
+    - src: /hero/placeholder-tech-5.jpg
+      alt: Server Rack
+    - src: /hero/placeholder-tech-6.jpg
+      alt: Database Schema
 about:
-  title: "About Me"
+  title: "The Digital Architect"
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    With over 14 years of IT experience, I bridge the gap between **Network Security** and **Full Stack Development**.
+    I don't just build websites; I engineer secure, self-hosted ecosystems that cut operational costs to zero. My unique background allows me to design applications with military-grade security architecture from day one.
 experience:
-  title: Work Experience
+  title: "Mission History"
   items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
+    - position: "Senior Full Stack Developer (Present)"
+      date: "2018 - Present"
       company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
+        name: ALKHOLI Group
+        logo: "i-heroicons-building-office-2"
+        url: "https://www.alkholi.com"
+        color: "#06b6d4"
+    - position: "Senior Network Professional"
+      date: "2012 - 2018"
       company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
+        name: ALKHOLI Group
+        logo: "i-heroicons-server-stack"
+        url: "https://www.alkholi.com"
+        color: "#8b5cf6"
+    - position: "IT Helpdesk Engineer"
+      date: "2010 - 2012"
       company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
+        name: First Arabian Hotels
+        logo: "i-heroicons-computer-desktop"
+        url: "#"
+        color: "#64748b"
 skills:
-  title: Skills
-  description: "A mix of design, product, and front-end expertise for end-to-end delivery."
+  title: "Technical Arsenal"
+  description: "A comprehensive toolkit for building secure, scalable enterprise solutions."
   groups:
-    - title: "Design"
+    - title: "Core & Frontend"
       items:
-        - "UX Research"
-        - "UI Design"
-        - "Design Systems"
-        - "Prototyping"
-    - title: "Development"
+        - "JavaScript (Advanced)"
+        - "Vue.js / Nuxt.js"
+        - "Svelte"
+        - "HTML5 / CSS3"
+    - title: "Backend & DB"
       items:
-        - "Vue.js"
-        - "Nuxt"
-        - "TypeScript"
-        - "HTML/CSS"
-    - title: "Tools"
+        - "Node.js / Express"
+        - "SQL (MySQL, MSSQL)"
+        - "MongoDB"
+        - "PostgreSQL"
+    - title: "Security & Ops"
       items:
-        - "Figma"
-        - "Framer"
-        - "Storybook"
-        - "Notion"
+        - "Linux Admin"
+        - "Fortinet Security"
+        - "SSL/TLS"
+        - "CI/CD Pipelines"
+    - title: "AI & Tools"
+      items:
+        - "GenAI Integration"
+        - "n8n Automation"
+        - "Git/GitHub"
+        - "Docker"
 projects:
-  title: "Projects"
-  description: "Selected work across enterprise systems, automation, and bilingual platforms."
+  title: "Deployed Systems"
+  description: "Enterprise-grade applications delivering real business impact."
   links:
-    - label: "View all projects"
+    - label: "View Full Archive"
       to: "/projects"
       color: "neutral"
+      variant: "outline"
 contact:
-  title: "Contact"
-  description: "Have a project in mind or just want to say hello? Let's talk."
+  title: "Initialize Connection"
+  description: "Ready to deploy secure, high-performance solutions? Let's talk."
   methods:
     - label: "Email"
-      value: "emma.thompson@example.com"
-      to: "mailto:emma.thompson@example.com"
+      value: "fawzy.mohamed@live.com"
+      to: "mailto:fawzy.mohamed@live.com"
       icon: "i-heroicons-envelope"
     - label: "LinkedIn"
-      value: "linkedin.com/in/emmathompson"
-      to: "https://linkedin.com/in/emmathompson"
+      value: "in/fawzy-mohamed"
+      to: "https://www.linkedin.com/in/fawzy-mohamed-2326b096/"
       icon: "i-simple-icons-linkedin"
       target: "_blank"
     - label: "GitHub"
-      value: "github.com/emmathompson"
-      to: "https://github.com/emmathompson"
+      value: "github.com/fawzymohamed"
+      to: "https://github.com/fawzymohamed"
       icon: "i-simple-icons-github"
       target: "_blank"

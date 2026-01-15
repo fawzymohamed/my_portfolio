@@ -3,7 +3,7 @@ const { footer } = useAppConfig()
 </script>
 
 <template>
-  <footer class="mt-10 border-t border-default">
+  <footer class="mt-10 border-t border-slate-800 bg-slate-950 text-slate-400">
     <UContainer class="py-10">
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <div>
@@ -62,10 +62,13 @@ const { footer } = useAppConfig()
               class="gap-2"
             >
               <template v-if="link.icon">
-                <UIcon :name="link.icon" class="size-4" />
+                <UIcon
+                  :name="link.icon"
+                  class="size-4"
+                />
               </template>
               <span class="text-xs">
-                {{ link.label || link['aria-label'] }}
+                {{ (link as any).label || (link as any)['aria-label'] }}
               </span>
             </UButton>
           </div>

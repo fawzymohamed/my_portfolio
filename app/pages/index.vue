@@ -19,7 +19,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UPage v-if="page">
+  <div v-if="page">
     <LandingHero :page />
     <UPageSection
       :ui="{
@@ -29,6 +29,8 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingProjects :page />
       <LandingWorkExperience :page />
+      <LandingSkills :page />
+      <LandingContact :page />
     </UPageSection>
-  </UPage>
+  </div>
 </template>

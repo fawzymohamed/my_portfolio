@@ -1,0 +1,10 @@
+title: "Multi-Location Stock Management System"
+description: "Real-time inventory tracking with WAC calculations, NCR automation, and 99% transfer accuracy across multiple branches."
+image: "/projects/stock-system.jpg"
+url: "https://github.com/alkholigroup2020/stock-management-system"
+tags:
+  - "Vue.js"
+  - "Node.js"
+  - "SQL"
+  - "Automation"
+date: 2024-01-01

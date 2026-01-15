@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const themeColor = '#020618'
+const themeColor = '#020617' // Slate-950/Midnight Blue
 
 useHead({
   meta: [
@@ -12,14 +12,14 @@ useHead({
   ],
   htmlAttrs: {
     lang: 'en',
-    class: 'dark'
+    class: 'dark' // Force Dark Mode
   }
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt Portfolio Template',
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
+  titleTemplate: '%s - Fawzy Mohamed Fawzy',
+  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png', // Update later
+  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png', // Update later
   twitterCard: 'summary_large_image'
 })
 </script>

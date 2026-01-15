@@ -1,6 +1,9 @@
-title: Designing Interfaces, Building Experiences.
-description: I've worked on a variety of projects, focusing on creating intuitive digital experiences where thoughtful design meets clean code. Here are some highlights I'm proud of, showcasing my process from concept to execution.
+title: Project Archive
+description: A curated timeline of deployed enterprise systems, automation tools, and security architectures.
 links:
-  - label: "Let's talk"
+  - label: "Access GitHub"
+    to: "https://github.com/fawzymohamed"
+    target: "_blank"
     color: "neutral"
-  - label: 'Email me'
+  - label: "Contact for Demo"
+    to: "mailto:fawzy.mohamed@live.com"
