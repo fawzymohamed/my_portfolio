@@ -21,15 +21,15 @@ useSeoMeta({
 </script>
 
 <template>
-  <UPage v-if="page">
+  <div v-if="page">
     <UPageHero
       :title="page.title"
       :description="page.description"
       orientation="horizontal"
       :ui="{
-        container: 'lg:flex sm:flex-row items-center',
+        container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 max-h-[500px] lg:flex sm:flex-row items-center',
         title: '!mx-0 text-left',
-        description: '!mx-0 text-left',
+        description: '!mx-0 text-left mt-14',
         links: 'justify-start'
       }"
     >
@@ -39,9 +39,14 @@ useSeoMeta({
         :alt="global.picture?.alt!"
       />
     </UPageHero>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="border-t border-slate-800 mb-12" />
+    </div>
+
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6 pb-12'
       }"
     >
       <MDC
@@ -57,5 +62,5 @@ useSeoMeta({
         />
       </div>
     </UPageSection>
-  </UPage>
+  </div>
 </template>

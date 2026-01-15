@@ -12,17 +12,17 @@ hero:
       size: "lg"
       icon: "i-heroicons-code-bracket-square"
   images:
-    - src: /hero/placeholder-tech-1.jpg
+    - src: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop
       alt: System Architecture
-    - src: /hero/placeholder-tech-2.jpg
+    - src: https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop
       alt: Security Dashboard
-    - src: /hero/placeholder-tech-3.jpg
+    - src: https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop
       alt: Code Interface
-    - src: /hero/placeholder-tech-4.jpg
+    - src: https://images.unsplash.com/photo-1558494949-efc5e60c94ef?q=80&w=2070&auto=format&fit=crop
       alt: Network Map
-    - src: /hero/placeholder-tech-5.jpg
+    - src: https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1974&auto=format&fit=crop
       alt: Server Rack
-    - src: /hero/placeholder-tech-6.jpg
+    - src: https://images.unsplash.com/photo-1504384308090-c54be3855833?q=80&w=1862&auto=format&fit=crop
       alt: Database Schema
 about:
   title: "The Digital Architect"

@@ -22,7 +22,7 @@ content: |
 
   I am currently open to full-time roles, freelance contracts, and technical consulting.
 images:
-  - src: /hero/placeholder-tech-1.jpg
+  - src: https://images.unsplash.com/photo-1558494949-efc5e60c94ef?q=80&w=2070&auto=format&fit=crop
     alt: System Architecture
-  - src: /hero/placeholder-tech-2.jpg
+  - src: https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop
     alt: Security Dashboard

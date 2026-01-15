@@ -25,85 +25,123 @@ useSeoMeta({
 </script>
 
 <template>
-  <UPage v-if="page">
-    <UContainer>
-      <UPageHero
-        :title="page.title"
-        :description="page.description"
-        :links="page.links"
-        :ui="{
-          title: '!mx-0 text-left',
-          description: '!mx-0 text-left',
-          links: 'justify-start'
-        }"
-      >
-        <template #links>
-          <div
-            v-if="page.links"
-            class="flex items-center gap-2"
-          >
-            <UButton
-              :label="page.links[0]?.label"
-              :to="global.meetingLink"
-              v-bind="page.links[0]"
-            />
-            <UButton
-              :to="`mailto:${global.email}`"
-              v-bind="page.links[1]"
-            />
-          </div>
-        </template>
-      </UPageHero>
-      <UPageSection
-        :ui="{
-          container: '!pt-0'
-        }"
-      >
-        <Motion
-          v-for="(project, index) in projects"
-          :key="project.title"
-          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
-          :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-          :transition="{ delay: 0.2 * index }"
-          :in-view-options="{ once: true }"
+  <div v-if="page">
+    <UPageHero
+      :title="page.title"
+      :description="page.description"
+      :links="page.links"
+      :ui="{
+        container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 max-h-[500px]',
+        title: '!mx-0 text-left',
+        description: '!mx-0 text-left mt-12',
+        links: 'justify-start'
+      }"
+    >
+      <template #links>
+        <div
+          v-if="page.links"
+          class="flex items-center gap-2"
         >
-          <UPageCard
-            :title="project.title"
-            :description="project.description"
-            :to="project.url"
-            orientation="horizontal"
-            variant="naked"
-            :reverse="index % 2 === 1"
-            class="group"
-            :ui="{
-              wrapper: 'max-sm:order-last'
-            }"
+          <UButton
+            :label="page.links[0]?.label"
+            :to="global.meetingLink"
+            v-bind="page.links[0]"
+          />
+          <UButton
+            :to="`mailto:${global.email}`"
+            v-bind="page.links[1]"
+          />
+        </div>
+      </template>
+    </UPageHero>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="border-t border-slate-800 mb-12" />
+    </div>
+
+    <UPageSection
+      :ui="{
+        container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6 pb-12'
+      }"
+    >
+      <div
+        v-for="(project, index) in projects"
+        :key="project.title"
+        class="mb-24 last:mb-0"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Image Column -->
+          <Motion
+            class="relative group"
+            :class="{ 'lg:order-last': index % 2 === 1 }"
+            :initial="{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }"
+            :while-in-view="{ opacity: 1, x: 0 }"
+            :transition="{ duration: 0.8 }"
+            viewport="{ once: true }"
           >
-            <template #leading>
-              <span class="text-sm text-muted">
+            <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
+            <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 ring-1 ring-white/10">
+              <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300 z-10" />
+              <img
+                :src="project.image"
+                :alt="project.title"
+                class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+              >
+            </div>
+          </Motion>
+
+          <!-- Content Column -->
+          <Motion
+            class="flex flex-col justify-center space-y-6"
+            :initial="{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }"
+            :while-in-view="{ opacity: 1, x: 0 }"
+            :transition="{ duration: 0.8, delay: 0.2 }"
+            viewport="{ once: true }"
+          >
+            <div
+              class="flex items-center gap-3"
+              :class="{ 'flex-row-reverse': index % 2 === 1 }"
+            >
+              <span class="px-3 py-1 text-xs font-mono font-medium rounded-full bg-slate-800 text-cyan-400 border border-slate-700">
                 {{ new Date(project.date).getFullYear() }}
               </span>
-            </template>
-            <template #footer>
-              <ULink
+              <div class="h-px bg-slate-800 flex-1" />
+            </div>
+
+            <h3 class="text-3xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+              {{ project.title }}
+            </h3>
+
+            <p class="text-lg text-slate-400 leading-relaxed">
+              {{ project.description }}
+            </p>
+
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="tag in project.tags"
+                :key="tag"
+                class="text-sm text-slate-500 font-mono"
+              >
+                #{{ tag }}
+              </span>
+            </div>
+
+            <div class="pt-4">
+              <UButton
                 :to="project.url"
-                class="text-sm text-primary flex items-center"
+                target="_blank"
+                variant="outline"
+                color="primary"
+                size="lg"
+                icon="i-heroicons-arrow-top-right-on-square"
+                class="hover:bg-cyan-500 hover:text-white transition-all duration-300"
               >
                 View Project
-                <UIcon
-                  name="i-lucide-arrow-right"
-                  class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-                />
-              </ULink>
-            </template>
-            <img
-              :src="project.image"
-              :alt="project.title"
-              class="object-cover w-full h-48 rounded-lg"
-            >
-          </UPageCard>
-        </Motion>
-      </UPageSection>
-    </UContainer>
-  </UPage>
+              </UButton>
+            </div>
+          </Motion>
+        </div>
+      </div>
+    </UPageSection>
+  </div>
 </template>
