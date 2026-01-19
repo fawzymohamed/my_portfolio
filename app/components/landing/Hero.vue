@@ -7,7 +7,7 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
-const roles = ['Senior Full Stack Developer', 'Network Security Expert', 'System Architect', 'Automation Engineer']
+const roles = ['Full Stack Web Developer', 'Network Security Professional', 'System Architect', 'Automation Engineer']
 const currentRole = ref('')
 const isDeleting = ref(false)
 const loopNum = ref(0)
@@ -73,7 +73,7 @@ onMounted(() => {
         >
           <div class="relative">
             <NuxtImg
-              class="size-24 sm:size-32 rounded-full ring-2 ring-cyan-500 ring-offset-4 ring-offset-slate-950 shadow-[0_0_20px_rgba(6,182,212,0.5)] object-cover"
+              class="size-24 sm:size-32 rounded-full ring-2 ring-cyan-500 ring-offset-4 ring-offset-slate-950 shadow-[0_0_20px_rgba(6,182,212,0.5)] object-cover mt-4 md:mt-8"
               :src="global.picture?.src!"
               :alt="global.picture?.alt!"
               width="256"
@@ -110,40 +110,20 @@ onMounted(() => {
       </template>
 
       <template #links>
-        <Motion
-          :initial="{ y: 20, opacity: 0 }"
-          :animate="{ y: 0, opacity: 1 }"
-          :transition="{ duration: 0.5, delay: 0.6 }"
-        >
-          <div class="flex flex-col sm:flex-row items-center gap-4">
-            <UButton
-              v-if="page.hero.links"
-              v-bind="page.hero.links[0]"
-              class="rounded-full font-bold tracking-wide shadow-[0_0_15px_rgba(6,182,212,0.3)] hover:shadow-[0_0_25px_rgba(6,182,212,0.6)] transition-all"
-            />
-
-            <div class="flex items-center gap-3 px-4 py-2 rounded-full border border-slate-800 bg-slate-900/50 backdrop-blur-sm">
-              <span class="relative flex size-2">
-                <span class="absolute inline-flex size-full rounded-full opacity-75 bg-green-500 animate-ping" />
-                <span class="relative inline-flex size-2 rounded-full bg-green-500" />
-              </span>
-              <span class="text-xs font-mono text-green-400 uppercase tracking-widest">System Operational</span>
-            </div>
-          </div>
-        </Motion>
-
-        <div class="flex gap-4 mt-8">
+        <div class="flex flex-wrap items-center justify-center gap-4 mt-6">
           <Motion
             v-for="(link, index) of footer?.links"
             :key="index"
             :initial="{ scale: 0, opacity: 0 }"
             :animate="{ scale: 1, opacity: 1 }"
-            :transition="{ delay: 0.8 + index * 0.1 }"
+            :transition="{ delay: 0.4 + index * 0.1 }"
           >
-            <UButton
-              v-bind="{ size: 'xl', color: 'neutral', variant: 'ghost', ...link }"
-              class="hover:text-cyan-400 hover:scale-110 transition-all duration-300"
-            />
+            <UTooltip :text="link['aria-label']" :popper="{ placement: 'top' }">
+              <UButton
+                v-bind="{ size: 'lg', color: 'neutral', variant: 'soft', ...link }"
+                class="rounded-full px-4 py-2 hover:text-cyan-400 hover:scale-105 transition-all duration-300 border border-slate-800 hover:border-cyan-500/50"
+              />
+            </UTooltip>
           </Motion>
         </div>
       </template>

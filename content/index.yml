@@ -1,8 +1,8 @@
 seo:
-  title: "Fawzy Mohamed Fawzy - Senior Full Stack Developer & Network Security Expert"
-  description: "Senior Full Stack Developer with 14+ years of experience. Specializing in secure, high-performance web architecture, zero-cost operations, and bilingual enterprise systems."
-title: "I am Fawzy Mohamed."
-description: "Senior Full Stack Developer & Network Security Expert. Transforming complex workflows into secure, high-performance digital solutions."
+  title: "Fawzy Mohamed - Full Stack Web Developer & Network Security Professional"
+  description: "Full Stack Web Developer with 14+ years of experience. Specializing in secure, high-performance web architecture, zero-cost operations, and bilingual enterprise systems."
+title: "I am Fawzy."
+description: "Full Stack Web Developer & Network Security Professional. Transforming complex workflows into secure, high-performance digital solutions."
 hero:
   links:
     - label: "View My Projects"
@@ -32,7 +32,7 @@ about:
 experience:
   title: "Mission History"
   items:
-    - position: "Senior Full Stack Developer (Present)"
+    - position: "Full Stack Developer (Present)"
       date: "2018 - Present"
       company:
         name: ALKHOLI Group
@@ -97,12 +97,17 @@ contact:
       value: "fawzy.mohamed@live.com"
       to: "mailto:fawzy.mohamed@live.com"
       icon: "i-heroicons-envelope"
+    - label: "GitHub (Work)"
+      value: "github.com/alkholigroup2020"
+      to: "https://github.com/alkholigroup2020"
+      icon: "i-simple-icons-github"
+      target: "_blank"
     - label: "LinkedIn"
       value: "in/fawzy-mohamed"
       to: "https://www.linkedin.com/in/fawzy-mohamed-2326b096/"
       icon: "i-simple-icons-linkedin"
       target: "_blank"
-    - label: "GitHub"
+    - label: "GitHub (Personal)"
       value: "github.com/fawzymohamed"
       to: "https://github.com/fawzymohamed"
       icon: "i-simple-icons-github"

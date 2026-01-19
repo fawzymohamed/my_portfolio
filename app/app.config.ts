@@ -15,7 +15,7 @@ export default defineAppConfig({
     },
     pageHero: {
       slots: {
-        container: 'py-24 sm:py-32 lg:py-40 relative isolate overflow-hidden',
+        container: 'py-16 sm:py-20 lg:py-24 relative isolate overflow-hidden',
         title: 'mx-auto max-w-2xl text-pretty text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500',
         description: 'mt-6 text-lg/8 mx-auto max-w-2xl text-gray-300'
       }
@@ -37,19 +37,22 @@ export default defineAppConfig({
       value: 'Riyadh, Saudi Arabia'
     }],
     links: [{
-      'icon': 'i-simple-icons-linkedin',
-      'to': 'https://www.linkedin.com/in/fawzy-mohamed-2326b096/',
-      'target': '_blank',
-      'aria-label': 'LinkedIn'
-    }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/alkholigroup2020',
-      'target': '_blank',
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/alkholigroup2020',
+      target: '_blank',
+      label: 'Work',
       'aria-label': 'GitHub (Work)'
     }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/fawzymohamed',
-      'target': '_blank',
+      icon: 'i-simple-icons-linkedin',
+      to: 'https://www.linkedin.com/in/fawzy-mohamed-2326b096/',
+      target: '_blank',
+      label: 'LinkedIn',
+      'aria-label': 'LinkedIn'
+    }, {
+      icon: 'i-simple-icons-github',
+      to: 'https://github.com/fawzymohamed',
+      target: '_blank',
+      label: 'Personal',
       'aria-label': 'GitHub (Personal)'
     }],
     credits: `(c) ${new Date().getFullYear()} Fawzy Mohamed Fawzy`,
