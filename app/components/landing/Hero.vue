@@ -72,10 +72,12 @@ onMounted(() => {
           :transition="{ duration: 0.5 }"
         >
           <div class="relative">
-            <UAvatar
-              class="size-24 ring-2 ring-cyan-500 ring-offset-4 ring-offset-slate-950 shadow-[0_0_20px_rgba(6,182,212,0.5)]"
+            <NuxtImg
+              class="size-24 sm:size-32 rounded-full ring-2 ring-cyan-500 ring-offset-4 ring-offset-slate-950 shadow-[0_0_20px_rgba(6,182,212,0.5)] object-cover"
               :src="global.picture?.src!"
               :alt="global.picture?.alt!"
+              width="256"
+              height="256"
             />
             <div class="absolute bottom-0 right-0 size-6 bg-green-500 border-4 border-slate-950 rounded-full animate-pulse" />
           </div>

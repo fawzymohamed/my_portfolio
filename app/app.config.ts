@@ -1,7 +1,7 @@
 export default defineAppConfig({
   global: {
     picture: {
-      src: '/hero/profile-placeholder.jpg', // Placeholder until real image is added
+      src: '/hero/my-hero-pic.png', // Placeholder until real image is added
       alt: 'Fawzy Mohamed Fawzy'
     },
     meetingLink: 'https://cal.com/', // Keep placeholder or remove if not in CV
