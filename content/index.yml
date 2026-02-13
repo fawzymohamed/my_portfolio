@@ -27,8 +27,8 @@ hero:
 about:
   title: "The Digital Architect"
   description: |
-    With over 14 years of IT experience, I bridge the gap between **Network Security** and **Full Stack Development**.
-    I don't just build websites; I engineer secure, self-hosted ecosystems that cut operational costs to zero. My unique background allows me to design applications with military-grade security architecture from day one.
+    With over 14 years of IT experience, I specialize in building **enterprise web applications** using **JavaScript, Vue.js, and Nuxt.js**.
+    From real-time inventory systems to AI-powered platforms, I turn complex business workflows into clean, scalable digital products. A background in network infrastructure gives me a deep understanding of performance, security, and reliability at every layer of the stack.
 experience:
   title: "Mission History"
   items:

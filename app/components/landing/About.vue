@@ -47,7 +47,7 @@ defineProps<{
               <div class="size-3 rounded-full bg-green-500/80" />
             </div>
             <div class="text-xs text-slate-400 ml-2">
-              fawzy@security-hub:~/profile
+              fawzy@dev-studio:~/profile
             </div>
           </div>
 
@@ -59,9 +59,9 @@ defineProps<{
             </div>
             <div class="text-slate-300">
               {<br>
-              &nbsp;&nbsp;"role": "Senior Full Stack Dev",<br>
-              &nbsp;&nbsp;"security_clearance": "Level 5",<br>
-              &nbsp;&nbsp;"mission": "Zero-Cost Ops",<br>
+              &nbsp;&nbsp;"role": "Full Stack Web Developer",<br>
+              &nbsp;&nbsp;"stack": "Vue.js / Nuxt.js / Node.js",<br>
+              &nbsp;&nbsp;"focus": "Enterprise Web Apps",<br>
               &nbsp;&nbsp;"status": "Online"<br>
               }
             </div>
