@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm rebuild:*)",
+      "Bash(npm rebuild:*)"
+    ]
+  }
+}

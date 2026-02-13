@@ -7,7 +7,7 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
-const roles = ['Full Stack Web Developer', 'Network Security Professional', 'System Architect', 'Automation Engineer']
+const roles = ['Full Stack Web Developer', 'Vue.js & Nuxt.js Specialist', 'Enterprise Web Application Engineer', 'Automation Engineer']
 const currentRole = ref('')
 const isDeleting = ref(false)
 const loopNum = ref(0)
