@@ -1,10 +1,10 @@
 title: "Enterprise Portal & Compliance System"
 description: "Unified corporate portal with LDAP/JWT auth, Code of Conduct workflows, and digital business card generation."
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
+image: "/resources/portal-login-page.png"
 url: "https://github.com/alkholigroup2020/alkholi_portal"
 tags:
   - "Nuxt.js"
   - "Express.js"
   - "MSSQL"
   - "Active Directory"
-date: 2023-11-01
+date: 2024-02-01

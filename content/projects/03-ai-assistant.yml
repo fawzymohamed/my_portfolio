@@ -1,6 +1,6 @@
 title: "AI Prompt Assistant Platform"
-description: "Bilingual GenAI platform with smart prompt builder, real-time quality scoring, and zero-cost operational model."
-image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1932&auto=format&fit=crop"
+description: "Bilingual GenAI platform with smart prompt builder, real-time quality scoring, and self-hosted operational model."
+image: "/resources/prompt-builder-hero.png"
 url: "https://ai.alkholi.com/"
 tags:
   - "Groq AI"
