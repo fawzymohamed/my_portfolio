@@ -10,7 +10,7 @@ defineProps<{
   <UPageSection
     :title="page.contact.title"
     :ui="{
-      container: 'mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-24',
+      container: 'mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24',
       title: 'text-3xl font-bold tracking-tight text-white mb-8 text-center text-glow'
     }"
   >
@@ -26,7 +26,7 @@ defineProps<{
           {{ page.contact.description }}
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full">
           <Motion
             v-for="(method, index) in page.contact.methods"
             :key="method.label"

@@ -22,40 +22,43 @@ export default defineAppConfig({
     }
   },
   footer: {
-    heading: 'Secure Your Digital Future',
-    description: 'Specializing in secure, high-performance web architecture and automation.',
+    heading: 'Fawzy Mohamed',
+    description: 'Full Stack Web Developer specializing in secure, high-performance web architecture and enterprise automation.',
     contacts: [{
       label: 'Email',
       value: 'fawzy.mohamed@live.com',
-      to: 'mailto:fawzy.mohamed@live.com'
+      to: 'mailto:fawzy.mohamed@live.com',
+      icon: 'i-lucide-mail'
     }, {
       label: 'Phone',
       value: '+966 59 529 1001',
-      to: 'tel:+966595291001'
+      to: 'tel:+966595291001',
+      icon: 'i-lucide-phone'
     }, {
       label: 'Location',
-      value: 'Riyadh, Saudi Arabia'
+      value: 'Riyadh, Saudi Arabia',
+      icon: 'i-lucide-map-pin'
     }],
-    links: [{
-      icon: 'i-simple-icons-github',
-      to: 'https://github.com/alkholigroup2020',
-      target: '_blank',
-      label: 'Work',
+    socials: [{
+      'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/alkholigroup2020',
+      'target': '_blank',
+      'label': 'GitHub (Work)',
       'aria-label': 'GitHub (Work)'
     }, {
-      icon: 'i-simple-icons-linkedin',
-      to: 'https://www.linkedin.com/in/fawzy-mohamed-2326b096/',
-      target: '_blank',
-      label: 'LinkedIn',
+      'icon': 'i-simple-icons-linkedin',
+      'to': 'https://www.linkedin.com/in/fawzy-mohamed-2326b096/',
+      'target': '_blank',
+      'label': 'LinkedIn',
       'aria-label': 'LinkedIn'
     }, {
-      icon: 'i-simple-icons-github',
-      to: 'https://github.com/fawzymohamed',
-      target: '_blank',
-      label: 'Personal',
+      'icon': 'i-simple-icons-github',
+      'to': 'https://github.com/fawzymohamed',
+      'target': '_blank',
+      'label': 'GitHub (Personal)',
       'aria-label': 'GitHub (Personal)'
     }],
-    credits: `(c) ${new Date().getFullYear()} Fawzy Mohamed Fawzy`,
+    credits: `\u00A9 ${new Date().getFullYear()} Fawzy Mohamed`,
     tagline: 'Precision. Security. Performance.'
   }
 })

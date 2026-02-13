@@ -112,13 +112,16 @@ onMounted(() => {
       <template #links>
         <div class="flex flex-wrap items-center justify-center gap-4 mt-6">
           <Motion
-            v-for="(link, index) of footer?.links"
+            v-for="(link, index) of footer?.socials"
             :key="index"
             :initial="{ scale: 0, opacity: 0 }"
             :animate="{ scale: 1, opacity: 1 }"
             :transition="{ delay: 0.4 + index * 0.1 }"
           >
-            <UTooltip :text="link['aria-label']" :popper="{ placement: 'top' }">
+            <UTooltip
+              :text="link['aria-label']"
+              :popper="{ placement: 'top' }"
+            >
               <UButton
                 v-bind="{ size: 'lg', color: 'neutral', variant: 'soft', ...link }"
                 class="rounded-full px-4 py-2 hover:text-cyan-400 hover:scale-105 transition-all duration-300 border border-slate-800 hover:border-cyan-500/50"
