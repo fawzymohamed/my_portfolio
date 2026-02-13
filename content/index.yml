@@ -103,7 +103,7 @@ contact:
       icon: "i-simple-icons-github"
       target: "_blank"
     - label: "LinkedIn"
-      value: "in/fawzy-mohamed"
+      value: "linkedin/fawzy-mohamed"
       to: "https://www.linkedin.com/in/fawzy-mohamed-2326b096/"
       icon: "i-simple-icons-linkedin"
       target: "_blank"
