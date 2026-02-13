@@ -11,7 +11,7 @@ defineProps<{
     :title="page.skills.title"
     :description="page.skills.description"
     :ui="{
-      container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20',
+      container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14',
       title: 'text-3xl font-bold tracking-tight text-white mb-4 text-glow',
       description: 'text-lg text-slate-400 mb-12 max-w-2xl mx-auto text-center'
     }"

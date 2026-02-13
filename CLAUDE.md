@@ -86,6 +86,7 @@ pnpm typecheck    # Run TypeScript type checking
 - Use Tailwind utility classes for layout
 - Responsive design: mobile-first with `sm:`, `lg:` breakpoints
 - Dark mode via `useColorMode()` composable
+- **Vertical spacing:** All pages' sections must use `py-14` for consistent spacing between sections across the website
 
 ## Content Management
 

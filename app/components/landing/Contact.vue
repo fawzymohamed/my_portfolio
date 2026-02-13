@@ -10,7 +10,7 @@ defineProps<{
   <UPageSection
     :title="page.contact.title"
     :ui="{
-      container: 'mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24',
+      container: 'mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14',
       title: 'text-3xl font-bold tracking-tight text-white mb-8 text-center text-glow'
     }"
   >

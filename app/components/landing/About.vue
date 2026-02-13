@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <UPageSection
     :ui="{
-      container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12'
+      container: 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14'
     }"
   >
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

@@ -10,7 +10,7 @@ defineProps<{
   <UPageSection
     :title="page.experience.title"
     :ui="{
-      container: 'mx-auto max-w-4xl py-12',
+      container: 'mx-auto max-w-4xl py-14',
       title: 'text-3xl font-bold tracking-tight text-white mb-8 text-glow'
     }"
   >

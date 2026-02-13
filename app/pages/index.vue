@@ -23,7 +23,7 @@ useSeoMeta({
     <LandingHero :page />
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: '!py-0'
       }"
     >
       <LandingAbout :page />
