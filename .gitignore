@@ -26,3 +26,6 @@ logs
 # VSC
 .history
 .vercel
+
+# Playwright MCP screenshots
+.playwright-mcp
