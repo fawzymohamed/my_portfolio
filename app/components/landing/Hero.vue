@@ -7,7 +7,13 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
-const roles = ['Full Stack Web Developer', 'Vue.js & Nuxt.js Specialist', 'Enterprise Web Apps Engineer', 'Automation Engineer']
+const roles = [
+  'Full Stack Web Developer',
+  'Vue.js & Nuxt.js Specialist',
+  'Enterprise Web Apps Engineer',
+  'Automation Engineer',
+  'Security-First Developer'
+]
 const currentRole = ref('')
 const isDeleting = ref(false)
 const loopNum = ref(0)
@@ -61,8 +67,9 @@ onMounted(() => {
     <UPageHero
       :ui="{
         headline: 'flex items-center justify-center',
-        title: 'text-shadow-md max-w-4xl mx-auto',
-        links: 'mt-8 flex-col justify-center items-center'
+        title: 'text-shadow-md max-w-4xl mx-auto px-4',
+        description: 'px-4',
+        links: 'mt-8 flex-col justify-center items-center px-4'
       }"
     >
       <template #headline>
@@ -91,8 +98,8 @@ onMounted(() => {
           :transition="{ duration: 0.5, delay: 0.2 }"
         >
           <span class="block text-slate-100 mb-2">{{ page.title }}</span>
-          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 h-[1.2em]">
-            {{ currentRole }}<span class="animate-blink text-slate-500">|</span>
+          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 min-h-[1.2em] text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            <span class="inline-block">{{ currentRole }}</span><span class="animate-blink text-slate-500">|</span>
           </span>
         </Motion>
       </template>
@@ -103,7 +110,7 @@ onMounted(() => {
           :animate="{ y: 0, opacity: 1 }"
           :transition="{ duration: 0.5, delay: 0.4 }"
         >
-          <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p class="text-slate-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             {{ page.description }}
           </p>
         </Motion>
