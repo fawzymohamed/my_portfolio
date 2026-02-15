@@ -107,17 +107,40 @@ useSeoMeta({
               </span>
             </div>
 
-            <div class="pt-4">
+            <div class="pt-4 flex flex-wrap gap-3">
               <UButton
-                :to="project.url"
+                v-if="project.repoUrl"
+                :to="project.repoUrl"
                 target="_blank"
                 variant="outline"
                 color="primary"
                 size="lg"
-                icon="i-heroicons-arrow-top-right-on-square"
-                class="hover:bg-cyan-500 hover:text-white transition-all duration-300"
+                icon="i-simple-icons-github"
+                class="cursor-pointer hover:bg-cyan-500 hover:text-white transition-all duration-300"
               >
-                View Project
+                View Repo
+              </UButton>
+              <UButton
+                v-if="project.liveUrl"
+                :to="project.liveUrl"
+                target="_blank"
+                variant="outline"
+                color="primary"
+                size="lg"
+                icon="i-lucide-external-link"
+                class="cursor-pointer hover:bg-cyan-500 hover:text-white transition-all duration-300"
+              >
+                View Live
+              </UButton>
+              <UButton
+                :to="`/projects/${project.stem.replace('projects/', '')}`"
+                variant="outline"
+                color="primary"
+                size="lg"
+                icon="i-lucide-arrow-right"
+                class="cursor-pointer hover:bg-cyan-500 hover:text-white transition-all duration-300"
+              >
+                More Details
               </UButton>
             </div>
           </Motion>

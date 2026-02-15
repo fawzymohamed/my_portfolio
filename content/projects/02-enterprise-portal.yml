@@ -1,7 +1,7 @@
 title: "Enterprise Portal & Compliance System"
 description: "Unified corporate portal with LDAP/JWT auth, Code of Conduct workflows, and digital business card generation."
 image: "/resources/portal-login-page.png"
-url: "https://github.com/alkholigroup2020/alkholi_portal"
+repoUrl: "https://github.com/alkholigroup2020/alkholi_portal"
 tags:
   - "Nuxt.js"
   - "Express.js"

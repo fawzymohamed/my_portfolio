@@ -25,7 +25,7 @@ const { data: projects } = await useAsyncData('landing-projects', () =>
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
       <Motion
         v-for="(project, index) in projects"
-        :key="project.url"
+        :key="project.stem"
         :initial="{ opacity: 0, y: 50 }"
         :animate="{ opacity: 1, y: 0 }"
         :transition="{ delay: index * 0.1, duration: 0.5 }"
@@ -66,14 +66,13 @@ const { data: projects } = await useAsyncData('landing-projects', () =>
                 {{ new Date(project.date).getFullYear() }}
               </span>
               <UButton
-                :to="project.url"
-                target="_blank"
+                :to="`/projects/${project.stem.replace('projects/', '')}`"
                 variant="ghost"
                 color="primary"
                 icon="i-heroicons-arrow-right"
-                class="group-hover:translate-x-1 transition-transform"
+                class="cursor-pointer group-hover:translate-x-1 transition-transform"
               >
-                View System
+                View Details
               </UButton>
             </div>
           </div>

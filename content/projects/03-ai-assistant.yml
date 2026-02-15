@@ -1,7 +1,7 @@
 title: "AI Prompt Assistant Platform"
 description: "Bilingual GenAI platform with smart prompt builder, real-time quality scoring, and self-hosted operational model."
 image: "/resources/prompt-builder-hero.png"
-url: "https://ai.alkholi.com/"
+liveUrl: "https://ai.alkholi.com/"
 tags:
   - "Groq AI"
   - "Nuxt 4"

@@ -1,7 +1,6 @@
 title: "FUT Coins Miner"
 description: "Chrome extension for FIFA Ultimate Team automation with automated card sniping, Futbin price integration, and customizable keyboard shortcuts."
 image: "/resources/fut-coins-miner.png"
-url: "#"
 tags:
   - "Vue.js"
   - "Chrome Extensions"

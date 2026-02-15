@@ -1,7 +1,7 @@
 title: "Corporate Websites Portfolio"
 description: "5+ corporate websites for group subsidiaries built with Vue.js/Nuxt.js, featuring full bilingual support (EN/AR with RTL), SEO optimization, and responsive design."
 image: "/resources/akg-hero-section.png"
-url: "#"
+liveUrl: "https://www.alkholi.com"
 tags:
   - "Nuxt.js"
   - "Vue.js"
