@@ -14,7 +14,7 @@ const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects').all()
 })
 
-const { global } = useAppConfig()
+// const { global } = useAppConfig()
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
@@ -36,28 +36,9 @@ useSeoMeta({
         description: '!mx-0 text-left mt-12',
         links: 'justify-start'
       }"
-    >
-      <template #links>
-        <div
-          v-if="page.links"
-          class="flex items-center gap-2"
-        >
-          <UButton
-            :label="page.links[0]?.label"
-            :to="global.meetingLink"
-            v-bind="page.links[0]"
-          />
-          <UButton
-            :to="`mailto:${global.email}`"
-            v-bind="page.links[1]"
-          />
-        </div>
-      </template>
-    </UPageHero>
+    />
 
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="border-t border-slate-800 mb-12" />
-    </div>
+    <div class="h-px bg-linear-to-r from-transparent via-cyan-500/50 to-transparent mb-12 md:mb-20" />
 
     <UPageSection
       :ui="{
@@ -67,7 +48,7 @@ useSeoMeta({
       <div
         v-for="(project, index) in projects"
         :key="project.title"
-        class="mb-24 last:mb-0"
+        class="mb-36 last:mb-0"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Image Column -->
@@ -79,7 +60,7 @@ useSeoMeta({
             :transition="{ duration: 0.8 }"
             viewport="{ once: true }"
           >
-            <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
+            <div class="absolute -inset-1 bg-linear-to-r from-cyan-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
             <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 ring-1 ring-white/10">
               <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-300 z-10" />
               <img

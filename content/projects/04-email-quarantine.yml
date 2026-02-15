@@ -1,0 +1,10 @@
+title: "Intelligent Email Quarantine System"
+description: "ML-based threat detection system that cut email security review time from hours to minutes, with self-service capabilities for end users."
+image: "/resources/email-quarantine-system.png"
+url: "#"
+tags:
+  - "Node.js"
+  - "Machine Learning"
+  - "Security"
+  - "Automation"
+date: 2023-06-01

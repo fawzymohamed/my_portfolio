@@ -1,9 +1,3 @@
 title: Project Archive
 description: A curated timeline of deployed enterprise systems, automation tools, and security architectures.
-links:
-  - label: "Access GitHub"
-    to: "https://github.com/fawzymohamed"
-    target: "_blank"
-    color: "neutral"
-  - label: "Contact for Demo"
-    to: "mailto:fawzy.mohamed@live.com"
+links: []

@@ -236,3 +236,7 @@ No test framework is currently configured. When adding tests:
 | Styles | `app/assets/css/main.css` |
 | Config | `nuxt.config.ts`, `content.config.ts` |
 | Planning docs | `project-docs/` |
+
+## General Notes:
+
+- The dev server is always running on localhost:4000, and if not make sure to run it only on that port.
